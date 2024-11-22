@@ -6,9 +6,6 @@ import Info from "./components/Info"
 import ProductList from "./components/ProductList";
 import "../src/App.css"
 
-import ProductList from "./components/ProductList";
-
-
 const App = () => {
   return (
     <div className="App">
