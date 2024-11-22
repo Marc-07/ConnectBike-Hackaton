@@ -1,5 +1,4 @@
 import React from "react";
-import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import "../styles/Hero.css";
 import "../index.css"
