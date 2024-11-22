@@ -1,3 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero.light-mode {
+    background-color: #f5f5f5;
+    color: #121212;
+}
+
+.hero.dark-mode {
+    background-color: #121212;
+    color: #f5f5f5;
+}
