@@ -24,27 +24,38 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 16px;
+    overflow: hidden; /* Asegura que la imagen no sobresalga del borde redondeado */
     max-width: 300px;
     background-color: #f9f9f9;
     transition: transform 0.2s;
+  }
+  
+  /* Hover en la card */
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Imagen dentro de la card */
+  .card-image {
+    width: 100%; /* La imagen ocupa el ancho completo de la card */
+    height: 180px; /* Altura fija para consistencia */
+    object-fit: cover; /* Mantiene las proporciones de la imagen */
+    border-bottom: 1px solid #ddd; /* Línea divisoria entre imagen y contenido */
   }
   
   /* Título de la card */
   .card-title {
     font-size: 18px;
     color: #333;
-    margin: 0 0 10px;
+    margin: 10px 0;
+    text-align: center;
   }
   
-  
+  /* Texto dentro de la card */
   .card-text {
     font-size: 14px;
     color: #555;
-    margin: 0 0 8px;
-  }
-
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    margin: 5px 10px;
+    line-height: 1.4;
   }

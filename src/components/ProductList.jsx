@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import "../styles/ProductList.css";
+import imagenstation from "../assets/imagen.jpg"
 
 const ProductList = () => {
   const [stations, setStations] = useState([]);
@@ -36,6 +37,11 @@ const ProductList = () => {
       <div className="cards-container">
         {stations.map((station) => (
           <div className="card" key={station.id}>
+            <img 
+             className='card-image'
+             src={imagenstation}
+            />
+           
             <h2 className="card-title">{station.name}</h2>
             <p className="card-text">
               <strong>Bicicletas disponibles:</strong> {station.free_bikes || 'N/A'}
