@@ -7,7 +7,8 @@ const fetchBikeStations = async () => {
       throw new Error("Error al obtener las estaciones de Bogotá.");
     }
     const data = await response.json();
-    setStations(data.network.stations); 
+    const limitedStations = data.network.stations.slice(0, 12)
+    setStations(limitedStations); 
   } catch (error) {
     setError(error.message);
   } finally {
