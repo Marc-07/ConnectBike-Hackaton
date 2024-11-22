@@ -1,17 +1,16 @@
-/* Contenedor principal */
+
 .container {
     padding: 20px;
     font-family: Arial, sans-serif;
   }
-  
-  /* Título principal */
+
   .title {
     text-align: center;
-    color: #4CAF50;
+    color: #a580cf;
     margin-bottom: 20px;
   }
   
-  /* Contenedor de las cards */
+
   .cards-container {
     display: flex;
     flex-wrap: wrap;
@@ -19,32 +18,29 @@
     gap: 20px;
   }
   
-  /* Estilo de cada card */
+
   .card {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Asegura que la imagen no sobresalga del borde redondeado */
+    overflow: hidden; 
     max-width: 300px;
     background-color: #f9f9f9;
     transition: transform 0.2s;
   }
-  
-  /* Hover en la card */
+
   .card:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   }
   
-  /* Imagen dentro de la card */
   .card-image {
-    width: 100%; /* La imagen ocupa el ancho completo de la card */
-    height: 180px; /* Altura fija para consistencia */
-    object-fit: cover; /* Mantiene las proporciones de la imagen */
-    border-bottom: 1px solid #ddd; /* Línea divisoria entre imagen y contenido */
+    width: 100%; 
+    height: 180px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #ddd; 
   }
   
-  /* Título de la card */
   .card-title {
     font-size: 18px;
     color: #333;
@@ -52,7 +48,6 @@
     text-align: center;
   }
   
-  /* Texto dentro de la card */
   .card-text {
     font-size: 14px;
     color: #555;
